@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/658bf8faa5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-flex-container">
+            <a href="index.html"><img src="5e5fd7c602ca7cd432feb68e_bonsai-logo (1).svg" alt="Bonsai logo"></a>
+            
+                
+                <i class="fa-solid fa-bars menu-btn"></i>
+            
+        </div>
+            <nav class="nav-menu">
+                <div class="nav-links">
+                    <a href="#">Product </a>
+                    <div class="lines"></div>
+                    <a href="#">Templates</a>
+                     <div class="lines"></div>
+                    <a href="#">Pricing</a>
+                     <div class="lines"></div>
+                    <a href="#">Reviews</a>
+                     <div class="lines"></div>
+                    <button class="login-menu-button">LOG IN</button>
+                    <button class="menu-button">START FREE</button>
+                </div>
+            </nav>
+    </header>
+    <main>
+        <section class="plans_pricing">
+            <h1>Plans & Pricing</h1>
+            <span class="free-months">2 MONTHS FREE!</span>
+            <div class="billing-toggle">
+                <span id="monthly" class="active">MONTHLY</span>
+
+                <label class="switch">
+                    <input type="checkbox" id="toggle" onclick="mudar()">
+                    <span class="slider">
+                        <svg class="slider-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"><path fill="none" d="m4 16.5 8 8 16-16"></path></svg> 
+                    </span> 
+                </label>
+
+                <span id="yearly">YEARLY</span>
+            </div>
+        </section>
+
+        <div class="plans-grid">
+            <section class="starter" id="starter">
+                <h2>Starter</h2>
+                <p>Ideal for freelancers and contractors just starting out.</p>
+                <div class="price">
+                    <span class="currency">$</span>
+                    <span class="value" data-monthly="24" data-yearly="17">24</span>
+                    <span class="period">/MONTH</span>
+                </div>
+                <p class="billed-yearly" style="display: none;">Billed yearly</p>
+                <div class="line"></div>
+                <ul class="plan_info">
+                    <li><i class="fa-solid fa-check"></i> All Templates</li>
+                    <li><i class="fa-solid fa-check"></i> Unlimited Clients & Projects</li>
+                    <li><i class="fa-solid fa-check"></i> Invoicing & Payments</li>
+                    <li><i class="fa-solid fa-check"></i> Proposals & Contracts</li>
+                    <li><i class="fa-solid fa-check"></i> Tasks & Time Tracking</li>
+                    <li><i class="fa-solid fa-check"></i> Client CRM</li>
+                    <li><i class="fa-solid fa-check"></i> Expense Tracking</li>
+                    <li><i class="fa-solid fa-check"></i> Up to 5 Project Collaborators</li>
+                </ul>
+                <button class="starter_plan_button">START FREE</button>
+            </section>
+            <section class="professional" id="professional">
+                <h2>Professional</h2>
+                <p>Everything a growing independent business needs to thrive.</p>
+                <div class="price">
+                    <span class="currency">$</span>
+                    <span class="value"data-monthly="39" data-yearly="32">39</span>
+                    <span class="period">/MONTH</span>
+                </div>
+                <p class="billed-yearly" style="display: none;">Billed yearly</p>
+                <div class="line"></div>
+                <ul class="plan_info">
+                    <li><i class="fa-solid fa-check"></i> Everything in Starter plus...</li>
+                    <li><i class="fa-solid fa-check"></i> Custom Branding</li>
+                    <li><i class="fa-solid fa-check"></i> Forms & Questionnaires</li>
+                    <li><i class="fa-solid fa-check"></i> Workflow Automations</li>
+                    <li><i class="fa-solid fa-check"></i> Client Portal</li>
+                    <li><i class="fa-solid fa-check"></i> QuickBooks Integration</li>
+                    <li><i class="fa-solid fa-check"></i> Calendly Integration</li>
+                    <li><i class="fa-solid fa-check"></i> Zapier Integration</li>
+                    <li><i class="fa-solid fa-check"></i> Up to 15 Project Collaborators</li>
+                </ul>
+                <button class="professional_plan_button">START FREE</button>
+            </section>
+            <section class="business" id="business">
+                <h2>Business</h2>
+                <p>The perfect package for small businesses and agencies.</p>
+                <div class="price">
+                    <span class="currency">$</span>
+                    <span class="value" data-monthly="79" data-yearly="52">79</span>
+                    <span class="period">/MONTH</span>
+                </div>
+                <p class="billed-yearly" style="display: none;">Billed yearly</p>
+                <div class="line"></div>
+                <ul class="plan_info">
+                    <li><i class="fa-solid fa-check"></i> Everything in Starter and Professional plus...</li>
+                    <li><i class="fa-solid fa-check"></i> Subcontractor Management</li>
+                    <li><i class="fa-solid fa-check"></i> Hiring Agreement Templates (1099 contracts)</li>
+                    <li><i class="fa-solid fa-check"></i> Subcontractor Onboarding</li>
+                    <li><i class="fa-solid fa-check"></i> Talent Pool</li>
+                    <li><i class="fa-solid fa-check"></i> 3 Team Seats (additional seats $9/month)</li>
+                    <li><i class="fa-solid fa-check"></i> Accountant Access</li>
+                    <li><i class="fa-solid fa-check"></i> Connect Multiple Bank Accounts</li>
+                    <li><i class="fa-solid fa-check"></i> Unlimited Subcontractors</li>
+                    <li><i class="fa-solid fa-check"></i> Unlimited Project Collaborators</li>
+                </ul>
+                <button class="business_plan_button">START FREE</button>
+            </section>
+        </div>
+
+        <section class="charge_work">
+            <h2>Super charge your work with add-ons</h2>
+            <div class="free">
+                <h3>Free</h3>
+                <div class="texts">
+                    <p class="strong_p">Collaborators</p>
+                    <p class="normal_p">Invite other users to specific projects for limited access and functionality.</p>
+                </div>
+            </div>
+
+            <div class="ninedol">
+                <div class="ninedol-price">
+                    <h3>$9</h3>
+                    <p class="month_p">/MONTH</p>
+                </div>
+                <div class="texts">
+                    <p class="strong_p">Partners</p>
+                    <p class="normal_p">Invite other users for full account access and company management.</p>
+                </div>
+            </div>
+
+            <div class="tendol">
+                <div class="tendol-price">
+                    <h3>$10</h3>
+                    <p class="month_p">/MONTH</p>
+                </div>
+                <div class="texts">
+                    <p class="strong_p">Bonsai Tax</p>
+                    <p class="normal_p_tendol">Track expenses, identify write-offs, and estimate quarterly taxes easily.</p>
+                    <p class="learn_more"><a href="#">LEARN MORE ></a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="your_business">
+            <h2>It's <span class="destaque-color">your</span> business. <br> We're here to help it grow.</h2>
+            <button class="btn_footer">START FREE</button>
+        </section>
+
+        <section class="questions">
+            <h2>Frequently Asked Questions</h2>
+            <h3>How does the free trial work?</h3>
+            <h3>Can I change plans anytime?</h3>
+            <h3>How do I pause my Bonsai subscription?</h3>
+            <h3>What is your refund policy?</h3>
+        </section>
+
+        <div class="footer-grid">
+            <section class="product">
+                <h4>PRODUCT</h4>
+                <div class="product_first">
+                    <p><a href="#">Proposals</a></p>
+                    <p><a href="#">Contracts</a></p>
+                    <p><a href="#">Invoicing</a></p>
+                    <p><a href="#">Client CRM</a></p>
+                    <p><a href="#">Time Tracking</a></p>
+                    <p><a href="#">Task Tracking</a></p>
+                    <p><a href="#">Forms</a></p>
+                    <p><a href="#">Accounting</a></p>
+                    <p><a href="#">Bonsai Tax</a></p>
+                    <p><a href="#">Bonsai Cash</a></p>
+                </div>
+                <div class="product_second">
+                    <p><a href="#"><span class="destaque-color">Pricing</span></a></p>
+                    <p><a href="#">Bonsai Reviews</a></p>
+                </div>
+            </section>
+            <section class="resources">
+                <h4>FREE RESOURCES</h4>
+                <div class="resources_first">
+                    <p><a href="#">Freelance Resources</a></p>
+                    <p><a href="#">Freelance Blog by Bonsai</a></p>
+                    <p><a href="#">How to Write a Contract</a></p>
+                    <p><a href="#">Online Signature Maker</a></p>
+                </div>
+                <div class="resources_second">
+                    <p><a href="#">Self-Employed Taxes Hub</a></p>
+                    <p><a href="#">Self-Employed Tax Calculator</a></p>
+                    <p><a href="#">Self-Employed Tax</a></p>
+                    <p><a href="#">Deductions</a></p>
+                </div>
+                <section class="templates">
+                    <h4>Templates</h4>
+                    <div class="templates_first">
+                        <p><a href="#">Invoice Templates  <i class="fa-solid fa-angle-down"></i></a></p>
+                        <p><a href="#">Proposal Templates  <i class="fa-solid fa-angle-down"></i></a></p>
+                        <p><a href="#">Contract Templates  <i class="fa-solid fa-angle-down"></i></a></p>
+                        <p><a href="#">Agreement Templates  <i class="fa-solid fa-angle-down"></i></a></p>
+                        <p><a href="#">Scope of Work Templates<i class="fa-solid fa-angle-down"></i></a></p>
+                        <p><a href="#">Quote Templates<i class="fa-solid fa-angle-down"></i></a></p>
+                        <p><a href="#">Credit Note Templates  </a></p>
+                        <p><a href="#">Estimate Templates  </a></p>
+                        <p><a href="#">Form Templates  </a></p>
+                    </div>
+                </section>
+            </section>
+            <section class="bonsai">
+                <h4>BONSAI</h4>
+                <div class="bonsai_first">
+                    <p><a href="#">About</a></p>
+                    <p><a href="#">Careers</a></p>
+                    <p><a href="#">Support</a></p>
+                    <p><a href="#">LinkedIn</a></p>
+                    <p><a href="#">Twitter</a></p>
+                    <p><a href="#">Privacy policy</a></p>
+                    <p><a href="#">Legal</a></p>
+                </div>
+                <div class="bonsai_second">
+                    <p><a href="#">Affiliates</a></p>
+                    <p><a href="#">Write for Us</a></p>
+                </div>
+                <div class="bonsai_third">
+                    <p><a href="#">Comparisons <i class="fa-solid fa-angle-down"></i></a></p>
+                </div>
+            </section>
+        </div>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
